@@ -56,7 +56,7 @@
         <!-- Account dropdown -->
         <div class="dropdown" style="display: flex; align-items: center;">
           <span class="navbar-text">
-            <a href="./product.php"><img class="carts" src="./img/cart.png" alt="" style="width: 1.5rem; margin-right: -2rem;"></a>
+            <a href="./cart.php"><img class="carts" src="./img/cart.png" alt="" style="width: 1.5rem; margin-right: -2rem;"></a>
             <img class="carts" src="./img/notification.png" alt="" style="width: 1.5rem; margin-right: -2rem;">
             <img class="carts" src="./img/account.png" alt="" style="width: 1.5rem; margin-right: -2rem;">
           </span>

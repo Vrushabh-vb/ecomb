@@ -1,4 +1,5 @@
 <?php require 'dbconnect.php' ?>
+<?php require 'navbar.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +52,7 @@
 </head>
 
 <body>
-<?php require 'navbar.php' ?>
+
     <div class="m">
         <img id="loading-gif" src="./img/animation.gif" alt="Loading">
         <h2>Order Successfully Placed</h2>

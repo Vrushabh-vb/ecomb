@@ -81,36 +81,40 @@ $result = $conn->query($sql);
                             <div class="row">
                                 <?php
                                 if ($result->num_rows > 0) {
+
                                     while ($row = $result->fetch_assoc()) {
-                                ?>
-                                        <div class="col-md-3 col-lg-2 col-sm-4 mb-4 mb-lg-0 mt-3" style="margin-right: 30px;">
-                                            <div class="card trends" id="card" style="width:200px; ">
-                                                <img src="images/<?php echo $row['img']; ?>" class="card-img-top" id="img" alt="error" />
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="medium"><b><a href="#!" class="text-muted" id="tr"><?php echo $row['title']; ?></a></b></p>
-                                                        <p class="small"><?php echo 'Rs ' . $row['price']; ?></p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <!-- Inside the foreach loop for displaying products -->
-                                                        <a href="cart.php" class="btn btn-dark buy-now">
-                                                            <span>Buy Now</span>
-                                                        </a>
-                                                        
-                                                        <div class="icon">
-                                                            <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> <!-- Shopping cart icon -->
-                                                            <i class="far fa-heart m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                  ?>
+                                      <div class="col-md-6 col-lg-3 mb-4 mb-lg-3 mt-3" style="margin-left:30px;margin-right:30px">
+                                        <div class="card trends" id="card">
+                                          <img src="images/<?php echo $row['img']; ?>" class="card-img-top" alt="error" />
+                                          <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                              <p class="medium"><b><a href="#!" class="text-muted" id="tr"><?php echo $row['title']; ?></a></b></p>
+                                              <p class="small"><?php echo 'Rs ' . $row['price']; ?></p>
+                                              <!-- <p class="small"><?php echo 'Pid ' . $row['pid']; ?></p> -->
                                             </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                              <!-- Inside the foreach loop for displaying products -->
+                                              <!-- <a href="cart.php" class="btn btn-dark buy-now">
+                                                <span>Buy Now</span>
+                                              </a> -->
+                          
+                                              <a href="product.php?product_id=<?php echo $row['pid']; ?>" class="btn btn-dark buy-now" id="tr">Buy Now</a>
+                          
+                                              <div class="icon">
+                                                <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> <!-- Shopping cart icon -->
+                                                <i class="far fa-heart m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
-                                <?php
+                                      </div>
+                                  <?php
                                     }
-                                } else {
-                                    echo "No items found.";
-                                }
-                                ?>
+                                  } else {
+                                    echo "No item found.";
+                                  }
+                                  ?>
                             </div>
                         </div>
                     </section>

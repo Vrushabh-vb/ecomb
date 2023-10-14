@@ -17,7 +17,7 @@
 
   <!-- slider -->
   <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -38,11 +38,11 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden ">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
@@ -105,7 +105,7 @@
 
           while ($row = $result->fetch_assoc()) {
         ?>
-            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 mt-3">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-5 mt-3">
               <div class="card trends" id="card">
                 <img src="images/<?php echo $row['img']; ?>" class="card-img-top" alt="error" />
                 <div class="card-body">
@@ -120,10 +120,12 @@
                       <span>Buy Now</span>
                     </a> -->
 
-                    <a href="product.php?product_id=<?php echo $row['pid']; ?>" class="btn btn-dark buy-now" id="tr">Buy Now</a>
+                      <a href="product.php?product_id=<?php echo $row['pid']; ?>" class="btn btn-dark buy-now" id="tr">See more</a>
+                      <button class="btn btn-dark add-to-cart" data-product-id="<?php echo $row['pid']; ?>">Add to Cart</button>
+
 
                     <div class="icon">
-                      <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> <!-- Shopping cart icon -->
+                      <!-- <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> Shopping cart icon -->
                       <i class="far fa-heart m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
                     </div>
                   </div>
