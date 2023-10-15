@@ -5,17 +5,20 @@
 <html lang="en">
 
 <head>
-
   <title>HOME | Vanilla</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- header -->
+  <div class="navv sticky-top " style="position: sticky">
   <?php require'navbar.php'?>
+  </div>
+  <div class="sale mt-3">
+  <img name="main-banner" src="./img/hurryup.webp" alt="asd" style="position: relative; width: 100%;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+  </div>
 
-
-
-  <!-- slider -->
+<!-- slider -->
   <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
     <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,6 +50,9 @@
     </button>
   </div>
 
+  
+
+  
   <!-- brans section -->
   <div class="brands">
 
@@ -79,7 +85,9 @@
     </div>
   </div>
 
-
+  <div class="img mt-3">
+  <img name="main-banner"  src="./img/festive.gif" alt="1" style="position: relative; width: 100%; box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;">
+  </div>
 
   <!-- trendings -->
   <section class="section1 mt-3 " id="trendingcard" style="background-color: #ffffff;">

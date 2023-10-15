@@ -13,17 +13,25 @@
   <meta name="apple-itunes-app" content="app-id=907394059, app-argument=https://www.myntra.com/" />
 
   <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
+  <style>.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
+</style>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/utils.css" /></head>
-<header class="header mw-80 m-auto ">
+  <link rel="stylesheet" href="./css/utils.css" />
+</head>
+<header class="header mw-80 m-auto sticky-lg-top" style=" background-color: white;" >
   <nav class="navbar navbar-expand-lg navbar-light" id="navb" style=" position: sticky;
     top: 0;
     z-index: 9999;
 ">
-  <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
     <div class="container-fluid ">
       <img src="./img/logo.png" alt="" style="width: 8rem;" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +66,7 @@
           <span class="navbar-text">
             <a href="./cart.php"><img class="carts" src="./img/cart.png" alt="" style="width: 1.5rem; margin-right: -2rem;"></a>
             <img class="carts" src="./img/notification.png" alt="" style="width: 1.5rem; margin-right: -2rem;">
-            <img class="carts" src="./img/account.png" alt="" style="width: 1.5rem; margin-right: -2rem;">
+            <img class="carts" src="./img/account.png" alt="" style="width: 1.5rem; margin-right: -0.5rem;">
           </span>
         </div>
 
