@@ -13,24 +13,14 @@
   <meta name="apple-itunes-app" content="app-id=907394059, app-argument=https://www.myntra.com/" />
 
   <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
-  <style>.header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 9999;
-}
-</style>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/utils.css" />
 </head>
-<header class="header mw-80 m-auto sticky-lg-top" style=" background-color: white;" >
-  <nav class="navbar navbar-expand-lg navbar-light" id="navb" style=" position: sticky;
-    top: 0;
-    z-index: 9999;
-">
+<!-- <header class="m-auto position-sticky sticky-top top-0" style=" background-color: white;" > -->
+  <nav class="navbar navbar-expand-lg bg-light text-dark position-sticky top-0 " id="navb">
     <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon">
     <div class="container-fluid ">
       <img src="./img/logo.png" alt="" style="width: 8rem;" />
@@ -40,13 +30,13 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand ms-auto ">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.php">HOME</a>
+            <a class="nav-link text-dark" aria-current="page" href="index.php">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="allproducts.php">ALL PRODUCTS</a>
+            <a class="nav-link text-dark" href="allproducts.php">ALL PRODUCTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#trendings">TRENDINGS</a>
+            <a class="nav-link text-dark" href="#trendings">TRENDINGS</a>
           </li>
         </ul>
         <!-- search -->
@@ -86,4 +76,4 @@
       </div>
     </div>
   </nav>
-</header>
+<!-- </header> -->

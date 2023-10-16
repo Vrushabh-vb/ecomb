@@ -75,7 +75,7 @@ $result = $conn->query($sql);
                 <div class="row">
                     <section class=" mt-3" id="allproducts" style="background-color: #ffffff;">
                         <div class="sticky-toptrendings mt-1" id="trendings">
-                            <h2 class="m-4 me-2 text-center mt-3"><b>ALL Products</b></h2>
+                        <img name="main-banner" src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05102023-NewArrivals-Sectionheader.jpg" alt="1" style="position: relative; width: 100%;">
                         </div>
                         <div class="container py-5 d-flex flex-wrap">
                             <div class="row">

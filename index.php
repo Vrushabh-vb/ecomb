@@ -90,13 +90,12 @@
   </div>
 
   <!-- trendings -->
+  <div class="new mt-3 trendings"id="trendings">
+  <!-- <img name="main-banner" src="./img/newstyle.png" alt="1" style="position: relative; width: 100%;"> -->
+  <img name="main-banner" src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05102023-TrendingThisSeason-Sectionheader.jpg" alt="1" style="position: relative; width: 100%;">
+  </div>
   <section class="section1 mt-3 " id="trendingcard" style="background-color: #ffffff;">
 
-    <div class="trendings mt-3" id="trendings">
-      <hr class="mt-3">
-      <h2 class="m-4 me-2 text-center mt-3"><b>TRENDINGS</b></h2>
-
-    </div>
     <div class="container py-5 d-flex flex-wrap">
       <div class="row">
         <?php
